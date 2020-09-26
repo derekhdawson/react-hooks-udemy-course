@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Input() {
   const [text, setText] = useState("");
   return (
-    <div>
+    <>
       <input
         onChange={(e) => {
           setText(e.target.value);
@@ -11,7 +11,7 @@ function Input() {
       />
       <br />
       {text}
-    </div>
+    </>
   );
 }
 
